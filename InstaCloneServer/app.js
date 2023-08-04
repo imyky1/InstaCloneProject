@@ -28,13 +28,13 @@ mongoose.connect(DB_URL)
 app.use(express.json())
 app.use(cors());// Use the cors middleware to allow requests from all origins
 
-if (process.env.NODE_ENV == "production") {
-    app.use(express.static('InstacloneClient/dist'))
-    const path = require('path')
-    app.get('*',(req,res)=>{
-        res.sendFile(path.resolve(__dirname,'InstacloneClient','dist','index.html'))
-    })
-}
+// if (process.env.NODE_ENV == "production") {
+//     app.use(express.static('InstacloneClient/dist'))
+//     const path = require('path')
+//     app.get('*',(req,res)=>{
+//         res.sendFile(path.resolve(__dirname,'InstacloneClient','dist','index.html'))
+//     })
+// }
 
 //Routes Miiddelware
 app.use('/',loginroutes)
