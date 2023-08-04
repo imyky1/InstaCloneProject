@@ -1,0 +1,17 @@
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.item{
+  width: 30%;
+}
+.Home{
+  margin-top: 120px;
+}
+.home-card{
+  margin: 20px auto 20px auto;
+  max-width: 600px;
+  height: max-content;
+
+}
